@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cobble Weather App</string>
+    <string name="temperature_type_fahrenheit">°F</string>
+    <string name="temperature_type_сelsius">°C</string>
+    <string name="sunrise_label">Sunrise</string>
+    <string name="sunset_label">Sunset</string>
+    <string name="description_label">Description</string>
+    <string name="wind_speed_label">Wind speed</string>
+    <string name="today_title">Today</string>
+    <string name="yes_action">Yes</string>
+
+    <string name="dialog_fine_location_rationale_title">Location Permission Needed</string>
+    <string name="dialog_fine_location_rationale_description">This app needs the Location permission, please accept to use location functionality</string>
+
+    <string name="load_weather_error">"Error happened while loading weather. Please try again later"</string>
+    <string name="get_location_error">"Error happened while getting location. Please try again later"</string>
+</resources>

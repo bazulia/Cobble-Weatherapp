@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="App" />
+
+    <style name="App.TextAppearance" parent="@android:style/TextAppearance" />
+
+    <style name="App.TextAppearance.Regular">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="App.TextAppearance.Regular.Gray">
+        <item name="android:textColor">@color/text_gray_color</item>
+    </style>
+
+    <style name="App.TextAppearance.Regular.White">
+        <item name="android:textColor">@color/text_white_color</item>
+    </style>
+
+    <style name="App.TextAppearance.Regular.White.12sp">
+        <item name="android:textSize">@dimen/text_12sp</item>
+    </style>
+
+    <style name="App.TextAppearance.Regular.White.14sp">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+
+    <style name="App.TextAppearance.Regular.White.18sp">
+        <item name="android:textSize">@dimen/text_18sp</item>
+    </style>
+
+    <style name="App.TextAppearance.Regular.White.30sp">
+        <item name="android:textSize">@dimen/text_30sp</item>
+    </style>
+
+    <style name="App.TextAppearance.Regular.White.60sp">
+        <item name="android:textSize">@dimen/text_60sp</item>
+    </style>
+
+    <style name="App.TextAppearance.Regular.White.60sp.Bold">
+        <item name="android:textStyle"></item>
+    </style>
+
+    <style name="App.TextAppearance.Regular.Gray.12sp">
+        <item name="android:textSize">@dimen/text_12sp</item>
+    </style>
+
+    <style name="App.TextAppearance.Regular.Gray.14sp">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+
+    <style name="App.TextAppearance.Regular.Gray.14sp.AllCaps">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

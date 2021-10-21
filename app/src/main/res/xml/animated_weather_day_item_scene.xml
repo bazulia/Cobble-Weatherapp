@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/itemExpanded"
+        motion:constraintSetStart="@+id/itemCollapsed">
+        <OnClick
+            motion:clickAction="toggle"
+            motion:targetId="@+id/itemWeatherDay" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/itemCollapsed">
+
+        <Constraint
+            android:id="@+id/bottomContentSpace"
+            android:layout_width="@dimen/size_24dp"
+            android:layout_height="@dimen/size_24dp"
+            motion:layout_constraintEnd_toEndOf="@id/endGuideline"
+            motion:layout_constraintStart_toStartOf="@id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/temperatureTitle" />
+
+        <Constraint
+            android:id="@+id/sunsetSunriseDivider"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="@dimen/size_1dp"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            android:background="@color/primary_light_color"
+            motion:layout_constraintEnd_toEndOf="@id/endGuideline"
+            motion:layout_constraintStart_toStartOf="@id/startGuideline"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="0" />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/descriptionWindDivider"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="@dimen/size_1dp"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            android:background="@color/primary_light_color"
+            motion:layout_constraintEnd_toEndOf="@id/endGuideline"
+            motion:layout_constraintStart_toStartOf="@id/startGuideline"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sunriseLabel">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sunriseTitle">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sunsetLabel">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sunsetTitle">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/descriptionLabel">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/descriptionTitle">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/windSpeedLabel">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/windSpeedTitle">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="0" />
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/itemExpanded">
+
+        <Constraint
+            android:id="@+id/bottomContentSpace"
+            android:layout_width="@dimen/size_24dp"
+            android:layout_height="@dimen/size_24dp"
+            motion:layout_constraintEnd_toEndOf="@id/endGuideline"
+            motion:layout_constraintStart_toStartOf="@id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/windSpeedTitle" />
+
+        <Constraint
+            android:id="@+id/sunsetSunriseDivider"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="@dimen/size_1dp"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            android:background="@color/primary_light_color"
+            motion:layout_constraintEnd_toEndOf="@id/endGuideline"
+            motion:layout_constraintStart_toStartOf="@id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/temperatureTitle">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/descriptionWindDivider"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="@dimen/size_1dp"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            android:background="@color/primary_light_color"
+            motion:layout_constraintEnd_toEndOf="@id/endGuideline"
+            motion:layout_constraintStart_toStartOf="@id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/sunsetTitle">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sunriseLabel">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sunriseTitle">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sunsetLabel">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sunsetTitle">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/descriptionLabel">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/descriptionTitle">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/windSpeedLabel">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint android:id="@+id/windSpeedTitle">
+            <CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="1" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>
