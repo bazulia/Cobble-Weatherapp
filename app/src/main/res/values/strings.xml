@@ -14,4 +14,5 @@
 
     <string name="load_weather_error">"Error happened while loading weather. Please try again later"</string>
     <string name="get_location_error">"Error happened while getting location. Please try again later"</string>
+    <string name="load_places_error">"Error happened while loading places. Status = %s"</string>
 </resources>

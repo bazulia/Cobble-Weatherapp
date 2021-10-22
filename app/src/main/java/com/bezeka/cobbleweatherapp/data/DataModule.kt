@@ -38,7 +38,7 @@ fun dataModule() = module {
         ).asCoroutineDispatcher()
     }
 
-    factory(qualifier = named(OPEN_WEATHER_MAP_API_KEY)) { BuildConfig.OWM_API_API_KEY }
+    factory(qualifier = named(OPEN_WEATHER_MAP_API_KEY)) { BuildConfig.OPEN_WEATHER_API_KEY }
 
     single<Moshi> {
         Moshi.Builder().build()

@@ -4,6 +4,9 @@ plugins {
     id 'kotlin-android-extensions'
 }
 
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
 android {
     compileSdkVersion 30
 
@@ -14,7 +17,8 @@ android {
         versionCode 1
         versionName "1.0"
 
-        buildConfigField 'String', 'OWM_API_API_KEY', '"df197fe6787d49ae5080e8a37a2a8ed9"'
+        buildConfigField 'String', 'PLACES_API_KEY', localProperties['googlePlacesApiKey']
+        buildConfigField 'String', 'OPEN_WEATHER_API_KEY', localProperties['openWeatherApiKey']
         buildConfigField 'String', 'OWM_API_BASE_URL', '"https://api.openweathermap.org/data/2.5/"'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -61,7 +65,7 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-moshi:$retrofit"
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp"
 
-    implementation "com.google.android.gms:play-services-location:18.0.0"
+    implementation 'com.google.android.libraries.places:places:2.5.0'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
