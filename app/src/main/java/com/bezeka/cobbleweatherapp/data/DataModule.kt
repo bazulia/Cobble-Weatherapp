@@ -2,7 +2,6 @@ package com.bezeka.cobbleweatherapp.data
 
 import com.bezeka.cobbleweatherapp.BuildConfig
 import com.bezeka.cobbleweatherapp.data.retrofit.RetrofitHolder
-import com.bezeka.cobbleweatherapp.data.weather.WeatherApi
 import com.bezeka.cobbleweatherapp.data.weather.WeatherRepositoryImpl
 import com.bezeka.cobbleweatherapp.domain.weather.WeatherRepository
 import com.squareup.moshi.Moshi
@@ -23,7 +22,6 @@ import java.util.concurrent.TimeUnit
 const val BACKGROUND_EXECUTOR = "BACKGROUND_EXECUTOR"
 const val BACKGROUND_DISPATCHER = "BACKGROUND_DISPATCHER"
 
-const val GOOGLE_MAPS_API_KEY = "google_maps_api_key"
 const val OPEN_WEATHER_MAP_API_KEY = "open_weather_map_api_key"
 
 fun dataModule() = module {
