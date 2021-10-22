@@ -1,6 +1,7 @@
 package com.bezeka.cobbleweatherapp.presentation
 
 import android.app.Application
+import com.bezeka.cobbleweatherapp.BuildConfig
 import com.bezeka.cobbleweatherapp.appModule
 import com.bezeka.cobbleweatherapp.data.dataModule
 import com.bezeka.cobbleweatherapp.domain.domainModule
@@ -9,14 +10,12 @@ import com.google.android.libraries.places.api.Places
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
-private const val API_KEY = "AIzaSyBZTgMeeGYmxIaNwgiroWJ5DCBdGet2dNo"
-
 class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
 
-        Places.initialize(this, API_KEY)
+        Places.initialize(this, BuildConfig.PLACES_API_KEY)
 
         startKoin {
             androidContext(this@App)

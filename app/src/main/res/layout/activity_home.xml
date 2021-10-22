@@ -29,11 +29,11 @@
         android:drawablePadding="@dimen/spacing_12dp"
         android:includeFontPadding="false"
         android:textAppearance="@style/App.TextAppearance.Regular.White.30sp"
+        android:text="@string/current_location_title"
         app:drawableStartCompat="@drawable/ic_location"
         app:layout_constraintEnd_toEndOf="@+id/endGuideline"
         app:layout_constraintStart_toStartOf="@+id/startGuideline"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Current City" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/searchCityButton"
